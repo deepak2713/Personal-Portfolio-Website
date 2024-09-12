@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8c1f5de897.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Porfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Deepak</span> <br> Kumar From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about  -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m Deepak Kumar, a software developer based in Delhi. I have a strong background in Computer Science & Engineering and have worked on numerous projects that showcase my skills in web development, mobile apps, etc.]. My goal is to leverage technology to solve real-world problems and make a positive impact.
+                        Skills:
+                        Programming Languages: [list of languages, e.g., HTML , CSS, JavaScript, Java, MYSQL etc.]
+                        Frameworks and Libraries: [list of frameworks, e.g., SPRINGBOOT.]
+                        Tools and Technologies: [list of tools, e.g., Git, GITHUB, AWS,FIREBASE, WORDPRESS etc.]
+                        When I’m not coding, you can find me [CRICKET].</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Developer</span><br>Develop Website/ Android App /UI</li>
+                                <li><span>UI/UX</span><br>Designing Web/ App interface</li>
+                                <li><span>App Development</span><br>Building Android / Ios apps</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024- Current</span><br>Web Developer</li>
+                                <li><span>U2024</span><br>Team Lead at Hackthon</li>
+                                <li><span>2022- 2023</span><br>Internship at Internsala</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2015-2017- High School</span><br>S.N.HIGH SCHOOL NARPATINAGAR</li>
+                                <li><span>2017-2019 - 10+2(PCM)</span><br>J.N.COLLEGE NEHRA</li>
+                                <li><span>2020-2024- B.TECH(CSE)</span><br>MMEC, MULLANA, AMBALA</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- Services -->
+      <div id="services">
+        <div class="container">
+            <h1 class=""sub-title>My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Custom Software Development: From initial concept to final product, I can help bring your software ideas to life.
+                        Web Development: Building modern, responsive websites that provide a seamless user experience.
+                        Mobile App Development: Creating intuitive mobile applications that meet your business requirements.
+                        Consulting: Providing expert advice to help you make informed decisions about your software projects.
+                        Maintenance and Support: Ensuring your software continues to run smoothly with ongoing maintenance and support.
+                        Let’s work together to build something amazing!</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+
+                <div>
+                    <i class="fa-brands fa-uikit"></i>
+                    <h2>UI/UX</h2>
+                    <p>Custom Software Development: From initial concept to final product, I can help bring your software ideas to life.
+                        Web Development: Building modern, responsive websites that provide a seamless user experience.
+                        Mobile App Development: Creating intuitive mobile applications that meet your business requirements.
+                        Consulting: Providing expert advice to help you make informed decisions about your software projects.
+                        Maintenance and Support: Ensuring your software continues to run smoothly with ongoing maintenance and support.
+                        Let’s work together to build something amazing!</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Custom Software Development: From initial concept to final product, I can help bring your software ideas to life.
+                        Web Development: Building modern, responsive websites that provide a seamless user experience.
+                        Mobile App Development: Creating intuitive mobile applications that meet your business requirements.
+                        Consulting: Providing expert advice to help you make informed decisions about your software projects.
+                        Maintenance and Support: Ensuring your software continues to run smoothly with ongoing maintenance and support.
+                        Let’s work together to build something amazing!</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+      </div>
+
+      <!-- Portfolio -->
+       <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+       </div>
+
+       <!-- Contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>myselfkumardeepak00@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 8084829712</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/skkumar.skdeepak/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/kumardeepak__7/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/deepak2713/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/deepak2713"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Deepak. Made with <i class="fa-solid fa-heart"></i> by Kumar Deepak</p>
+            </div>
+        </div>
+    
+
+     <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+     </script>
+     <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            closemenu.style.right = "200px";
+        }
+     </script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGKzhIrFmtNGkgF4LM4S4fw9WoPPkQ2j0WqZ4gOLptyBeDDL20e4eVlR2CfRumeOIT/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Send Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
